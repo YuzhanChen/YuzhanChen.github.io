@@ -2,13 +2,13 @@
     {
     "title":"跨域访问解决方案（Django)",
     "abstract":"开发中遇到了无法发送跨域 ajax 的问题，通过各种搜索和查阅文档解决了问题。相信有不少跟我一样的小白开发者会遇到同样的问题，因此在这里分享一下问题的成因讲解和自己的解决方案~",
-    "titleHref":"https://yuzhanchen.github.io/blog/html/201912162005.html",
+    "titleHref":"https://yuzhanchen.github.io/blog/201912162005",
     "date":"2019-12-16"
     },
     {
         "title":"预告：使用具有 LaTex 公式编辑支持的 Markdown 写高数题解",
         "abstract":"给某沙雕群友讲解数学题，顺便练习一下LaTex公式编辑~",
-        "titleHref":"",
+        "titleHref":"https://yuzhanchen.github.io/blog/201912231921",
         "date":"2019-12-22"
     },
     {
