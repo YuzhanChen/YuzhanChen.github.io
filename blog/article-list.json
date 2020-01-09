@@ -10,6 +10,11 @@
         "abstract":"给某沙雕群友讲解数学题，顺便练习一下LaTex公式编辑~",
         "titleHref":"https://yuzhanchen.github.io/blog/html/201912231921",
         "date":"2019-12-22"
+    },{
+        "title":"PyQtGraph 初探",
+        "abstract":"使用 PyQtGraph 进行试验数据的三维呈现与动态观察",
+        "titleHref":"https://yuzhanchen.github.io/blog/html/202001091520",
+        "date":"2020-01-09"
     },
     {
         "title":"预告：一次优化 Vue 项目打包体积的经历",
@@ -22,5 +27,5 @@
         "abstract":"Three.js是一款开源的3D绘图JS引擎",
         "titleHref":"",
         "date":"2019-12-22"
-    }
+    },
 ]
