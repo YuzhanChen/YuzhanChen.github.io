@@ -4,4 +4,6 @@
 
 保存了少量的博客文章
 
-另外，我制作了一个名为 Happy Synthesizer 的 web app，请玩玩看吧~
+Web app/games:
++ Happy Synthesizer: 动手绘制曲线，它将被转换为您制作的独有的音色，并且可以在网页上弹奏。
++ 2048-3D: 3D版的2048游戏，使用 three.js 库制作。
