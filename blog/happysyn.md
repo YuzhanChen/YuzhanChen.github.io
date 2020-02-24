@@ -28,7 +28,7 @@
 
 之所以使用 SVG 是因为一方面我可以利用 Adobe illustrator 方便地绘制我需要的图形，导出为 SVG 元素，并直接嵌入到HTML页面中。另一方面 ，与 Canvas 不同，SVG 基于 XML，这意味着 SVG DOM 中的每个元素都是可用的，我可以给任何元素添加 id、属性，可以用CSS控制其样式，可以用 JavaScript 进行各种 DOM 操作。缺点是当元素过多时会拖累性能，所幸我的应用足够简陋，应该没有这方面的担忧。
 
-上图中每一个钢琴键都是 <svg> 元素下的一个 <path> 子元素。我为每一个 <path> 元素添加了 mousedown, mouseup, mouseenter, mouseleave 事件处理器，实现了鼠标弹奏钢琴的功能。
+上图中每一个钢琴键都是 svg 元素下的一个 path 子元素。我为每一个 path 元素添加了 mousedown, mouseup, mouseenter, mouseleave 事件处理器，实现了鼠标弹奏钢琴的功能。
 
 Tone.js 是一个 WebAudio 框架，它实现了许多类似 DAW（Digital Audio Workstation） 的功能，例如合成器、采样器、常用效果器等。在这里我使用了 Tone.js 的采样器功能：接受一个固定音高的音频文件作为采样，在钢琴键盘触发不同音高的音符时，采样器将以不同的音高将采样播放出来。
 
@@ -38,7 +38,7 @@ Tone.js 是一个 WebAudio 框架，它实现了许多类似 DAW（Digital Audio
 
 ![网页画板](https://yuzhanchen.github.io/img/Snipaste_2020-02-23_20-17-39.png)
 
-页面中央是一块小黑板。用户可以用鼠标绘制白色线条。具体实现方法是在用户 mousedown 事件发生时向 SVG 元素中增加一个 <polyline> 元素并初始化 points 属性，之后在用户 mousemove 事件发生时向 points 属性中增加数据，使曲线跟着鼠标生长。顺便记得将 mousemove 的 x, y 数据存放在两个数组里，之后用户点击提交时要 POST 给后端服务器。
+页面中央是一块小黑板。用户可以用鼠标绘制白色线条。具体实现方法是在用户 mousedown 事件发生时向 SVG 元素中增加一个 polyline 元素并初始化 points 属性，之后在用户 mousemove 事件发生时向 points 属性中增加数据，使曲线跟着鼠标生长。顺便记得将 mousemove 的 x, y 数据存放在两个数组里，之后用户点击提交时要 POST 给后端服务器。
 
 ### 后端
 
